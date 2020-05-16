@@ -29,8 +29,8 @@ const Menu = () => {
         <img src={profile} className="img" alt="Profile" />
         <div className="menu-options">
           <ul>
-            {menuOptions.map((option) => (
-              <li>
+            {menuOptions.map((option, i) => (
+              <li key={i}>
                 <a href={option.href}>{option.title}</a>
               </li>
             ))}
