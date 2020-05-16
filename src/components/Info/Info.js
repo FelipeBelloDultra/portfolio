@@ -1,12 +1,13 @@
 import React, { memo } from 'react';
 
+import { Home } from './Components';
 import './styles.css';
 
-const Info = () => {
+const Info = (props) => {
   return (
     <div className="info" id="home">
-      <div className="info-content">
-        <h4>Home</h4>
+      <div className="info-home">
+        <Home showOnLoad={props.showOnLoad} />
       </div>
       <div className="info-content" id="sobre">
         <h4>Sobre</h4>

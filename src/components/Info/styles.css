@@ -20,6 +20,23 @@
   margin-bottom: 15px;
 }
 
+.info-home {
+  padding: 30px;
+  width: 95%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.transform-left {
+  transform: translate3d(-250px, 0px, 0px);
+  opacity: 0;
+}
+
 @media(max-width: 719px) {
   .info {
     width: 100%;

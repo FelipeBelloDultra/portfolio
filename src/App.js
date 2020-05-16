@@ -20,11 +20,13 @@ const Emoji = props => (
 const App = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [viewLoading, setViewLoading] = useState('view-loading');
+  const [showOnLoad, setShowOnLoad] = useState('transform-left');
 
   useEffect(() => {
     setMenuItems(document.querySelectorAll('.menu-options a'));
     window.addEventListener('load', () => {
       setViewLoading('view-loading-none');
+      setShowOnLoad(' ');
     });
   }, []);
 
@@ -48,7 +50,7 @@ const App = () => {
       <Loading classes={viewLoading} />
       <div className="main-container">
         <Menu />
-        <Info />
+        <Info showOnLoad={showOnLoad} />
       </div>
       <Emoji symbol="&#10084;&#65039;" />
     </>
