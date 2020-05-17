@@ -7,12 +7,14 @@ const App = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [showOnLoad, setShowOnLoad] = useState('transform-left');
   const [showRightOnLoad, setShowRightOnLoad] = useState('transform-right');
+  const [showOpacityOnLoad, setShowOpacityOnLoad] = useState('opacity-null');
 
   useEffect(() => {
     setMenuItems(document.querySelectorAll('.menu-options a'));
     window.addEventListener('load', () => {
       setShowOnLoad(' ');
       setShowRightOnLoad(' ');
+      setShowOpacityOnLoad(' ');
     });
   }, []);
 
@@ -25,17 +27,25 @@ const App = () => {
       const to = document.querySelector(id).offsetTop;
 
       window.scroll({
-        top: to - 15,
+        top: to - 30,
         behavior: 'smooth',
       });
     });
   });
 
+  // window.onscroll = () => {
+  //   console.log(document.documentElement.clientHeight)
+  // };
+
   return (
     <>
       <div className="main-container">
-        <Menu />
-        <Info showOnLoad={showOnLoad} />
+        <Menu showOpacityOnLoad={showOpacityOnLoad} />
+        <Info
+          showOnLoad={showOnLoad}
+          showRightOnLoad={showRightOnLoad}
+          showOpacityOnLoad={showOpacityOnLoad}
+        />
       </div>
       <FloatWhatsapp showRightOnLoad={showRightOnLoad} />
       <Emoji symbol="&#10084;&#65039;" showOnLoad={showOnLoad} />

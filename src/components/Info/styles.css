@@ -32,14 +32,16 @@
   margin-bottom: 10px;
 }
 
-.transform-left {
-  transform: translate3d(-250px, 0px, 0px);
-  opacity: 0;
-}
-
-.transform-right {
-  transform: translate3d(250px, 0px, 0px);
-  opacity: 0;
+.info-about {
+  padding: 60px 30px;
+  width: 95%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 @media(max-width: 719px) {

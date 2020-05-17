@@ -3,7 +3,7 @@ import React, { memo } from 'react';
 import profile from '../../assets/profile.jpg'
 import './styles.css';
 
-const Menu = () => {
+const Menu = (props) => {
   const menuOptions = [
     {
       href: '#home',
@@ -26,8 +26,8 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="content-menu">
-        <img src={profile} className="img" alt="Profile" />
-        <div className="menu-options">
+        <img src={profile} className={`img ${props.showOpacityOnLoad}`} alt="Profile" />
+        <div className={`menu-options ${props.showOpacityOnLoad}`}>
           <ul>
             {menuOptions.map((option, i) => (
               <li key={i}>

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-import { Home } from './Components';
+import { Home, About } from './Components';
 import './styles.css';
 
 const Info = (props) => {
@@ -9,8 +9,12 @@ const Info = (props) => {
       <div className="info-home">
         <Home showOnLoad={props.showOnLoad} />
       </div>
-      <div className="info-content" id="sobre">
-        <h4>Sobre</h4>
+      <div className="info-about" id="sobre">
+        <About
+          showOnLoad={props.showOnLoad}
+          showRightOnLoad={props.showRightOnLoad}
+          showOpacityOnLoad={props.showOpacityOnLoad}
+        />
       </div>
       <div className="info-content" id="habilidade">
         <h4>Habilidades</h4>
