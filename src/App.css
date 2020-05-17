@@ -11,6 +11,27 @@
   left: 20px;
   bottom: 20px;
   z-index: 999;
+  transition: all 0.3s;
+}
+
+.whatsapp-logo {
+  text-decoration: none;
+  opacity: 0.8;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  transition: all 0.3s;
+}
+
+.whatsapp-logo i {
+  color: #06d755;
+  font-size: 50px;
+  transition: all 0.3s;
+}
+
+.whatsapp-logo i:hover {
+  opacity: 0.5;
 }
 
 @media(max-width: 719px) {

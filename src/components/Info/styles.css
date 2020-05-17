@@ -37,6 +37,11 @@
   opacity: 0;
 }
 
+.transform-right {
+  transform: translate3d(250px, 0px, 0px);
+  opacity: 0;
+}
+
 @media(max-width: 719px) {
   .info {
     width: 100%;

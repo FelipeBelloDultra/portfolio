@@ -1,32 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
-import { Menu, Info, Loading } from './components';
+import { Menu, Info, Emoji, FloatWhatsapp } from './components';
 import './App.css';
-
-const Emoji = props => (
-  <p
-    className="react-site"
-    role="img"
-    aria-label={props.label ? props.label : ""}
-    aria-hidden={props.label ? "false" : "true"}
-    value={props.label}
-  >
-    <i>Desenvolvido com React</i>
-    <br />
-    <i>Feito com </i>{props.symbol}
-  </p>
-)
 
 const App = () => {
   const [menuItems, setMenuItems] = useState([]);
-  const [viewLoading, setViewLoading] = useState('view-loading');
   const [showOnLoad, setShowOnLoad] = useState('transform-left');
+  const [showRightOnLoad, setShowRightOnLoad] = useState('transform-right');
 
   useEffect(() => {
     setMenuItems(document.querySelectorAll('.menu-options a'));
     window.addEventListener('load', () => {
-      setViewLoading('view-loading-none');
       setShowOnLoad(' ');
+      setShowRightOnLoad(' ');
     });
   }, []);
 
@@ -47,12 +33,12 @@ const App = () => {
 
   return (
     <>
-      <Loading classes={viewLoading} />
       <div className="main-container">
         <Menu />
         <Info showOnLoad={showOnLoad} />
       </div>
-      <Emoji symbol="&#10084;&#65039;" />
+      <FloatWhatsapp showRightOnLoad={showRightOnLoad} />
+      <Emoji symbol="&#10084;&#65039;" showOnLoad={showOnLoad} />
     </>
   );
 };
