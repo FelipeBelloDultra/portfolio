@@ -11,11 +11,6 @@ const App = () => {
 
   useEffect(() => {
     setMenuItems(document.querySelectorAll('.menu-options a'));
-    window.addEventListener('load', () => {
-      setShowOnLoad(' ');
-      setShowRightOnLoad(' ');
-      setShowOpacityOnLoad(' ');
-    });
   }, []);
 
   menuItems.forEach(item => {
@@ -32,6 +27,12 @@ const App = () => {
       });
     });
   });
+
+  setTimeout(() => {
+    setShowOnLoad(' ');
+    setShowRightOnLoad(' ');
+    setShowOpacityOnLoad(' ');
+  }, 300);
 
   // window.onscroll = () => {
   //   console.log(document.documentElement.clientHeight)
