@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 
-import { Home, About } from './Components';
+import { Home, About, Skills, Contact } from './Components';
 import './styles.css';
 
 const Info = (props) => {
@@ -16,11 +16,11 @@ const Info = (props) => {
           showOpacityOnLoad={props.showOpacityOnLoad}
         />
       </div>
-      <div className="info-content" id="habilidade">
-        <h4>Habilidades</h4>
+      <div className="info-skills" id="habilidade">
+        <Skills />
       </div>
-      <div className="info-content" id="contato">
-        <h4>Contato</h4>
+      <div className="info-contact" id="contato">
+        <Contact showOpacityOnLoad={props.showOpacityOnLoad} />
       </div>
     </div>
   );

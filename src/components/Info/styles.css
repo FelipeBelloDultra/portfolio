@@ -11,15 +11,6 @@
   padding: 25px;
 }
 
-.info-content {
-  height: 600px;
-  width: 95%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 2);
-  background-color: rgb(223, 223, 223);
-  border-radius: 5px;
-  margin: 0px auto 10px;
-}
-
 .info-home {
   padding: 30px;
   width: 95%;
@@ -40,6 +31,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 3px;
+  margin: 0px auto 10px;
+}
+
+.info-skills {
+  padding: 60px 30px;
+  width: 95%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  margin: 0px auto 10px;
+}
+
+.info-contact {
+  padding: 60px 30px;
+  width: 95%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   margin: 0px auto 10px;
 }

@@ -14,7 +14,7 @@ const About = (props) => {
           <p>Formação - 2019</p>
         </div>
         <div className={`about-cards ${props.showOnLoad}`}>
-          <h3><span>{'<'} Técnico em informárica -</span> COMPLETO <span>{'/>'}</span></h3>
+          <h3><span>{'<'} Técnico em informática -</span> COMPLETO <span>{'/>'}</span></h3>
           <p>Etec Vereador e Vice Prefeito Sergio da Fonseca (Ibitinga, SP)</p>
           <p>Formação - 2018 ~ 2019</p>
         </div>
