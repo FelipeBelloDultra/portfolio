@@ -1,3 +1,43 @@
-.welcome {
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills-content h2 {
+  color: #79eed3;
+  margin-top: 10px;
+}
+
+.skills-content h2 span {
   color: #fff;
+}
+
+.ability-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ability {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: #fff;
+}
+
+.ability-skills {
+  display: flex;
+  align-items: center;
+  margin: 20px 45px;
+}
+
+.ability-skills p {
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.ability div img {
+  max-width: 35px;
+  height: 35px;
 }
