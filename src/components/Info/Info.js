@@ -17,7 +17,10 @@ const Info = (props) => {
         />
       </div>
       <div className="info-skills" id="habilidade">
-        <Skills />
+        <Skills
+          showOnLoad={props.showOnLoad}
+          showRightOnLoad={props.showRightOnLoad}
+        />
       </div>
       <div className="info-contact" id="contato">
         <Contact showOpacityOnLoad={props.showOpacityOnLoad} />

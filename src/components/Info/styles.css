@@ -41,8 +41,6 @@
   height: auto;
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 3px;
   margin: 0px auto 10px;
 }

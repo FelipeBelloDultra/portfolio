@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import './styles.css';
 
@@ -30,4 +30,4 @@ const Contact = (props) => {
   );
 };
 
-export default Contact;
+export default memo(Contact);

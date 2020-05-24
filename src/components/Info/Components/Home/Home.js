@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import './styles.css';
 
@@ -11,4 +11,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default memo(Home);

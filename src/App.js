@@ -34,10 +34,6 @@ const App = () => {
     setShowOpacityOnLoad(' ');
   }, 300);
 
-  // window.onscroll = () => {
-  //   console.log(document.documentElement.clientHeight)
-  // };
-
   return (
     <>
       <div className="main-container">

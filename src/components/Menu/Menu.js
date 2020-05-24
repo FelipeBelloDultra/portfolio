@@ -1,6 +1,5 @@
 import React, { memo } from 'react';
 
-import profile from '../../assets/profile.jpg'
 import './styles.css';
 
 const Menu = (props) => {
@@ -22,6 +21,8 @@ const Menu = (props) => {
       title: 'Contato',
     }
   ]
+
+  const profile = 'https://media-exp1.licdn.com/dms/image/C4D03AQHKbb1IyIlMIw/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=MuhmjX3TZOGQ0x4kXVutHFqIJFBBHEzZaoL5Q-wLFxw';
 
   return (
     <div className="menu">
