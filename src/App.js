@@ -37,15 +37,22 @@ const App = () => {
   return (
     <>
       <div className="main-container">
-        <Menu showOpacityOnLoad={showOpacityOnLoad} />
+        <Menu
+          showOpacityOnLoad={showOpacityOnLoad}
+        />
         <Info
           showOnLoad={showOnLoad}
           showRightOnLoad={showRightOnLoad}
           showOpacityOnLoad={showOpacityOnLoad}
         />
       </div>
-      <FloatWhatsapp showRightOnLoad={showRightOnLoad} />
-      <Emoji symbol="&#10084;&#65039;" showOnLoad={showOnLoad} />
+      <FloatWhatsapp
+        showRightOnLoad={showRightOnLoad}
+      />
+      <Emoji
+        symbol="&#10084;&#65039;"
+        showOnLoad={showOnLoad}
+      />
     </>
   );
 };
