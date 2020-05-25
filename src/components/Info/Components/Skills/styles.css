@@ -37,7 +37,8 @@
   margin-left: 5px;
 }
 
-.ability div img {
-  max-width: 35px;
-  height: 35px;
+.ability-option {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }

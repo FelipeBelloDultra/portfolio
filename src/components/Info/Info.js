@@ -7,7 +7,9 @@ const Info = (props) => {
   return (
     <div className="info" id="home">
       <div className="info-home">
-        <Home showOnLoad={props.showOnLoad} />
+        <Home
+          showOnLoad={props.showOnLoad}
+        />
       </div>
       <div className="info-about" id="sobre">
         <About
@@ -23,7 +25,9 @@ const Info = (props) => {
         />
       </div>
       <div className="info-contact" id="contato">
-        <Contact showOpacityOnLoad={props.showOpacityOnLoad} />
+        <Contact
+          showOpacityOnLoad={props.showOpacityOnLoad}
+        />
       </div>
     </div>
   );

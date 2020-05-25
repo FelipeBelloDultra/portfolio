@@ -27,8 +27,15 @@ const Menu = (props) => {
   return (
     <div className="menu">
       <div className="content-menu">
-        <img src={profile} className={`img ${props.showOpacityOnLoad}`} alt="Profile" />
-        <div className={`menu-options ${props.showOpacityOnLoad}`}>
+        <img
+          src={profile}
+          className={`img ${props.showOpacityOnLoad}`}
+          alt="Foto de Perfil"
+        />
+        <div
+          className={`menu-options
+          ${props.showOpacityOnLoad}`}
+        >
           <ul className="d-sm-block">
             {menuOptions.map((option, i) => (
               <li key={i}>
